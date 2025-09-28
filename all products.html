@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- material icons  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>E-Commerce</title>
+</head>
+<body>
+
+<!-- /* ============================== start header =============================== */ -->
+    <header>
+        <div class="container top-nav">
+            <a href="" class="logo">
+                <img src="img/logo-black.png" alt="">
+            </a>
+            <form action="" class="search">
+                <input type="search" placeholder="search for products">
+                <button type="submit" >Search</button>
+            </form>
+            <div class="card-header">
+                <div class="icon-cart">
+                    <i id="open" class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart_header_total" class="count-item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My Cart</p>
+                    <p id="header_total" class="price-card-head">$0</p>
+                </div>
+            </div>
+        </div>
+        <!-- /* ============================== start nav =============================== */ -->
+
+        <nav>
+            <div class="container links">
+                <i id="open-menu" class="fa-solid fa-bars"></i>
+                <ul>
+                    <i id="close-menu" class="fa-solid fa-circle-xmark close-mark"></i>
+                    <img src="img/logo-black.png" alt="">
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="active"><a href="all products.html">All Products</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contanct</a></li>
+                </ul>
+                <span class="overlay"></span>
+                <div class="login-signup">
+                    <a href="login.html">login<i style="margin-left: 10px;" class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html">signup<i style="margin-left: 10px;" class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!-- /* ============================== end nav =============================== */ -->
+
+
+    </header>    
+<!-- /* ============================== end header =============================== */ -->
+
+
+<!-- /* ============================== start aside =============================== */ -->
+<aside>
+    <div class="count">
+        <h4>My Cart<span id="product_count"></span></h4> 
+        <button id="close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="items_in_cart">
+    </div>
+    <div class="shop">
+        <div class="subtotal">
+            <p>Cart Subtotal</p>
+            <span id="cart_total"></span>
+        </div>
+        <a href="checkout.html">proceed to check out</a>
+        <button  class="more" >shop more</button> 
+    </div>
+</aside>
+<!-- /* ============================== end aside =============================== */ -->
+
+
+
+<div class="top_title">
+    <div class="container">
+        <h1>Experience The Future Of Technology With Our Topico.</h1>
+        <p>Find Every Thing You Need To Transform Your Home Into A Smart , Connected Space. Our Topico Store Offers A Wide Range Of Devices To Fit Your Needs</p>
+        
+    </div>
+</div>
+
+<div class="all_products">
+    <div class="container">
+        <span class="filter-btn">
+            Filter <i class="fa-solid fa-filter"></i>
+        </span>
+        <div class="our_list">
+            <h1>filter</h1>
+            <ul >
+                <li class="main">Category</li>
+                <div class="item">
+                    <li>Phones</li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li>Tablets</li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li>Electronics</li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li>TV</li>
+                    <input type="checkbox">
+
+                </div>
+                <div class="item">
+                    
+                    <li>Fashion</li>
+                    <input type="checkbox">
+
+                </div>
+                <div class="item">
+                    
+                    <li>Watchers</li>
+                    <input type="checkbox">
+
+                </div>
+            </ul>
+
+            <ul >
+                <li class="main">Brand</li>
+                <div class="item">
+                    <li>Apple</li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li>Samsung</li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li>Intel</li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li>Oppo</li>
+                    <input type="checkbox">
+
+                </div>
+                <div class="item">
+                    
+                    <li>Xiaomi</li>
+                    <input type="checkbox">
+
+                </div>
+                <div class="item">
+                    
+                    <li>Huawei</li>
+                    <input type="checkbox">
+
+                </div>
+            </ul>
+
+
+            <ul class="colors">
+                <li class="main">Colors</li>
+                <div class="item">
+                    <li style="background-color: red;"></li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li style="background-color: black;"></li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li style="background-color: blue;"></li>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <li style="background-color: green;"></li>
+                    <input type="checkbox">
+
+                </div>
+                <div class="item">
+                    
+                    <li style="background-color: orangered;"></li>
+                    <input type="checkbox">
+
+                </div>
+                <div class="item">
+                    
+                    <li style="background-color: rebeccapurple;"></li>
+                    <input type="checkbox">
+
+                </div>
+            </ul>
+            
+        </div>
+
+        <div id="our_products" class="our_products">
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <div class="container">
+        <a onmouseenter="color(this)" tabindex="0" href=""> <span  tabindex="0" class="btn_page prev"><i class="fa-solid fa-backward-step"></i></span></a>
+        <a onmouseenter="color(this)" tabindex="0" href=""><span class="num_page">1</span></a>
+        <a onmouseenter="color(this)" tabindex="0" href=""><span class="num_page">2</span></a>
+        <a onmouseenter="color(this)" tabindex="0" href=""><span class="num_page">3</span></a>
+        <a onmouseenter="color(this)" tabindex="0" href=""><span class="btn_page next"><i class="fa-solid fa-forward-step"></i></span></a>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div id="to_top" class="to_top">
+            <p>back to top</p>
+        </div>
+        <div class="contnet">
+            <div class="contact">
+                <img src="img/logo-white.png" alt="">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="text">
+                        <h4 style="color: white; margin-bottom: 5px;">Hot Line Free 24/24:</h4>
+                        <h4 style="color: #fcb700;">(+100) 123 456 789</h4>
+                    </div>
+                </div>
+                <p>Contact Us Whenever You Want</p>
+            </div>
+            <div class="help">
+                <h4 style="margin-bottom: 5px;color: white;">FAQ & Help</h4>
+                <div class="links">
+                    
+                    <a href="">F_A_Q_S</a>
+                    <a href="">Ordering Tracking</a>
+                    <a href="">Contacts</a>
+                    <a href="">Events</a>
+                    <a href="">Help Center</a>
+                </div>
+            </div>
+            <div class="help">
+                <h4 style="margin-bottom: 5px;color: white;">Shopping & Delivery</h4>
+                <div class="links">
+
+                    <a href="">Delivery Information</a>
+                    <a href="">Discount</a>
+                    <a href="">Payment & Shopping</a>
+                    <a href="">Estimated Delivery Time</a>
+                    <a href="">Shopping Guide</a>
+                </div>
+            </div>
+            <div class="help">
+                <h4 style="margin-bottom: 5px;color: white; "> Information</h4>
+                <div class="links">
+                    <a href="">Pupular</a>
+                    <a href="">Our Services</a>
+                    <a href="">Your Accounts</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms & Conditoin</a> 
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="text">
+                <p>Copyright @ <span style="color: #fcb700;">Topico</span> All Rights Reseved</p>
+            </div>
+            <div class="logos">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================== end mail =========================== -->
+
+
+
+
+
+
+
+<script src="js/all products,.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

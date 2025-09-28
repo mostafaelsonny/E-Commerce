@@ -1,0 +1,188 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- material icons  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>E-Commerce</title>
+</head>
+<body>
+
+<!-- /* ============================== start header =============================== */ -->
+    <header>
+        <div class="container top-nav">
+            <a href="" class="logo">
+                <img src="img/logo-black.png" alt="">
+            </a>
+            <form action="" class="search">
+                <input type="search" placeholder="search for products">
+                <button type="submit" >Search</button>
+            </form>
+            <div class="card-header">
+                <div class="icon-cart">
+                    <i id="open" class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart_header_total" class="count-item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My Cart</p>
+                    <p id="header_total" class="price-card-head">$0</p>
+                </div>
+            </div>
+        </div>
+        <!-- /* ============================== start nav =============================== */ -->
+
+        <nav>
+            <div class="container links">
+                <i id="open-menu" class="fa-solid fa-bars"></i>
+                <ul>
+                    <i id="close-menu" class="fa-solid fa-circle-xmark close-mark"></i>
+                    <img src="img/logo-black.png" alt="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all products.html">All Products</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contanct</a></li>
+                </ul>
+                <span class="overlay"></span>
+                <div class="login-signup">
+                
+                    <a href="signup.html">signup<i style="margin-left: 10px;" class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!-- /* ============================== end nav =============================== */ -->
+
+
+    </header>    
+<!-- /* ============================== end header =============================== */ -->
+
+
+<!-- /* ============================== start aside =============================== */ -->
+<aside>
+    <div class="count">
+        <h4>My Cart<span id="product_count"></span></h4> 
+        <button id="close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="items_in_cart">
+    </div>
+    <div class="shop">
+        <div class="subtotal">
+            <p>Cart Subtotal</p>
+            <span id="cart_total"></span>
+        </div>
+        <a href="checkout.html">proceed to check out</a>
+        <button  class="more" >shop more</button> 
+    </div>
+</aside>
+<!-- /* ============================== end aside =============================== */ -->
+
+
+<!-- /* ============================== start login =============================== */ -->
+
+<div class="login">
+    <div class="container">
+        <h2>Welcome back</h2>
+        <form action="index.html">
+            <input type="email" placeholder="enter your email">
+            <input type="text" placeholder="password">
+            <a href="">Forget Password ?</a>
+            <button type="submit" class="sign">Login</button>
+        </form>
+        <div class="accurate">
+            <p>Don't have an account ?</p>
+            <a>signup</a>
+        </div>
+        <button class="apple">
+            <i class="fa-brands fa-apple"></i>Login With Apple
+        </button>
+        <button class="google"><i class="fa-brands fa-google"></i>Login With Google</button>
+    </div>
+</div>
+
+
+<!-- /* ============================== end login =============================== */ -->
+
+
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="contnet">
+            <div class="contact">
+                <img src="img/logo-white.png" alt="">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="text">
+                        <h4 style="color: white; margin-bottom: 5px;">Hot Line Free 24/24:</h4>
+                        <h4 style="color: #fcb700;">(+100) 123 456 789</h4>
+                    </div>
+                </div>
+                <p>Contact Us Whenever You Want</p>
+            </div>
+            <div class="help">
+                <h4 style="margin-bottom: 5px;color: white;">FAQ & Help</h4>
+                <div class="links">
+                    
+                    <a href="">F_A_Q_S</a>
+                    <a href="">Ordering Tracking</a>
+                    <a href="">Contacts</a>
+                    <a href="">Events</a>
+                    <a href="">Help Center</a>
+                </div>
+            </div>
+            <div class="help">
+                <h4 style="margin-bottom: 5px;color: white;">Shopping & Delivery</h4>
+                <div class="links">
+
+                    <a href="">Delivery Information</a>
+                    <a href="">Discount</a>
+                    <a href="">Payment & Shopping</a>
+                    <a href="">Estimated Delivery Time</a>
+                    <a href="">Shopping Guide</a>
+                </div>
+            </div>
+            <div class="help">
+                <h4 style="margin-bottom: 5px;color: white; "> Information</h4>
+                <div class="links">
+                    <a href="">Pupular</a>
+                    <a href="">Our Services</a>
+                    <a href="">Your Accounts</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms & Conditoin</a> 
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="text">
+                <p>Copyright @ <span style="color: #fcb700;">Topico</span> All Rights Reseved</p>
+            </div>
+            <div class="logos">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
