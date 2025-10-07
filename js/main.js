@@ -6,10 +6,10 @@ const more = document.querySelector(".more")
 
 // ======================= OPEN AND CLOSE CART ===========================
 
-sidebar.addEventListener("mouseleave",()=>{
-        sidebar.classList.remove("show")
-    localStorage.setItem("cart","hide")
-})
+// sidebar.addEventListener("mouseleave",()=>{
+//         sidebar.classList.remove("show")
+//     localStorage.setItem("cart","hide")
+// })
 
 closeCart.addEventListener("click",()=>{
     sidebar.classList.remove("show")
@@ -24,14 +24,14 @@ openCart.addEventListener("click",()=>{
     localStorage.setItem("cart", "show")
 })
 
-window.addEventListener("load",()=>{
-    if(localStorage.getItem("cart")==="show"){
-        sidebar.classList.add("show")
-    }else{
-        sidebar.classList.remove("show")
-    }
+// window.addEventListener("load",()=>{
+//     if(localStorage.getItem("cart")==="show"){
+//         sidebar.classList.add("show")
+//     }else{
+//         sidebar.classList.remove("show")
+//     }
 
-})
+// })
 
 
 
@@ -61,14 +61,14 @@ openMenu.addEventListener("click",()=>{
 })
 
 
-window.addEventListener("load",()=>{
-    if(localStorage.getItem("menu")==="show"){
-        ul.classList.add("show")
-    }else{
-        ul.classList.remove("show")
-    }
+// window.addEventListener("load",()=>{
+//     if(localStorage.getItem("menu")==="show"){
+//         ul.classList.add("show")
+//     }else{
+//         ul.classList.remove("show")
+//     }
 
-})
+// })
 
 
 
