@@ -2051,7 +2051,7 @@ transform: rotateY(180deg);
 .our_products .item .icons i.active {
     background-color: #6d520795;
     cursor: auto;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .our_products .item .icons i:hover{

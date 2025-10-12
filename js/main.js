@@ -96,6 +96,7 @@ window.addEventListener("load",()=>{
     
 
 
+
 })
 
 
@@ -107,8 +108,6 @@ function addToCart (id , element){
     localStorage.setItem("state","active")
     localStorage.setItem("active_element", element.dataset.id)
 
-
-    
 
 
     getCartItem()
@@ -146,25 +145,38 @@ function getCartItem () {
 
 
 // =========================== UPDATE CART PRODUCTS ==============================
+
+
+
 let item_btn = document.querySelectorAll(".fa-cart-shopping")
 
 
 
 function updateIcons(index) {
+
     product_cart.splice(index,1)
+
     localStorage.setItem("our_products",JSON.stringify(product_cart))
+
     getCartItem()
     getSummaryItem();
+
+    item_btn = document.querySelectorAll(".fa-cart-shopping");
     
-    item_btn.forEach(btn=>{
-        let  id = Number(btn.dataset.id)
-        btn.classList.remove("active")
-        localStorage.setItem("state","non_active")
-        if(product_cart.some(product => product.id === id)){
-            btn.classList.add("active")
-            localStorage.setItem("state","active")
-        }
-    })
+    for (let i = 0 ; i < item_btn.length ; i++){
+        item_btn[i].classList.remove("active")
+        item_btn.forEach(btn=>{
+            let  id = Number(btn.dataset.id)
+            btn.classList.remove("active")
+            
+            localStorage.setItem("state","non_active")
+            if(product_cart.some(product => product.id === id)){
+                btn.classList.add("active")
+                
+                localStorage.setItem("state","active")
+            }
+        })
+    }
 }
 
 // =============================== CHECKBOX ITEMS ===========================
@@ -186,7 +198,11 @@ function getSummaryItem() {
             </div>
         </div>`;
     }
-    items_in_summary.innerHTML = a7a;
+    if (items_in_summary) {
+  items_in_summary.innerHTML = a7a;
+}
+
+    
 }
 
 
